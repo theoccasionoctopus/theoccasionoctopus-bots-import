@@ -2,7 +2,7 @@
 
 These bots import data from various sources and send it to the API of an Occasion Octopus server.
 
-They are Open Source under the Apache license.
+They are Open Source under the Apache license. See https://www.theoccasionoctopus.net/ for more.
 
 ## Setup
 
