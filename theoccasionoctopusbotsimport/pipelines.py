@@ -55,7 +55,7 @@ class SendToAPIPipeline(object):
                 data=item_event_data_to_send,
                 headers={'Authorization': 'Bearer ' + self.SERVER_ACCESS_TOKEN})
             return
-        elif not event_data.get('deleted', False) and not event_data.get('cancelled', False):
+        elif not event_data['data'].get('deleted', False) and not event_data['data'].get('cancelled', False):
             # New Event (But only if not deleted or cancelled)
             r = requests.post(
                 self.SERVER_INSTANCE_URL + '/api/v1/account/' + self.SERVER_ACCOUNT_ID + '/event.json',
