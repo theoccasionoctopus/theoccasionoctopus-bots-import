@@ -45,6 +45,12 @@ Then use one of the commands below.
 
 There is no need for a bot for this - this feature is available directly in the server itself.
 
+### University of St. Andrews, https://events.st-andrews.ac.uk
+
+This fetches online events only.
+
+    scrapy crawl unistandrews
+
 ### Mobilizon servers
 
 This gets all events on a server.
