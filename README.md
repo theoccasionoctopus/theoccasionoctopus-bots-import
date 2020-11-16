@@ -44,3 +44,14 @@ Then use one of the commands below.
 ### iCalendar files served from a URL
 
 There is no need for a bot for this - this feature is available directly in the server itself.
+
+### Mobilizon servers
+
+This gets all events on a server.
+
+Note: This functionality will be build into the server later, by following the remote user "relay@instance.tld".
+
+HTTPS is assumed.
+
+    scrapy crawl mobillizon -a starthost="mobilizon.fr"
+
