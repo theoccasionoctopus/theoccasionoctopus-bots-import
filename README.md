@@ -25,17 +25,7 @@ To run, you must pass some config to every command:
 
 Then use one of the commands below.
 
-## Bots
-
-### Coops UK, https://www.uk.coop/
-
-    scrapy crawl coopsuk
-
-### Open Tech Calendar, https://opentechcalendar.co.uk/
-
-    scrapy crawl opentechcalendarlocations
-    scrapy crawl opentechcalendargroups
-    scrapy crawl opentechcalendarevents
+## Bots (For data in standard form)
 
 ### Schema.org data on a webpage
 
@@ -45,11 +35,7 @@ Then use one of the commands below.
 
 There is no need for a bot for this - this feature is available directly in the server itself.
 
-### University of St. Andrews, https://events.st-andrews.ac.uk
-
-This fetches online events only.
-
-    scrapy crawl unistandrews
+## Bots (For specific software)
 
 ### Mobilizon servers
 
@@ -61,3 +47,20 @@ HTTPS is assumed.
 
     scrapy crawl mobillizon -a starthost="mobilizon.fr"
 
+## Bots (For specific websites)
+
+### Coops UK, https://www.uk.coop/
+
+    scrapy crawl coopsuk
+
+### Open Tech Calendar, https://opentechcalendar.co.uk/
+
+    scrapy crawl opentechcalendarlocations
+    scrapy crawl opentechcalendargroups
+    scrapy crawl opentechcalendarevents
+
+### University of St. Andrews, https://events.st-andrews.ac.uk
+
+This fetches online events only.
+
+    scrapy crawl unistandrews
