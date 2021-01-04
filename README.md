@@ -58,6 +58,11 @@ HTTPS is assumed.
     scrapy crawl opentechcalendarlocations
     scrapy crawl opentechcalendargroups
     scrapy crawl opentechcalendarevents
+    
+    
+### FOSDEM 2021, https://fosdem.org/2021
+
+    scrapy crawl fosdem2021
 
 ### University of St. Andrews, https://events.st-andrews.ac.uk
 
