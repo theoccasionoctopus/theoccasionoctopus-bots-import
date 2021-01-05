@@ -30,6 +30,11 @@ class SendToAPIPipeline(object):
         item_event_data_to_send['extra_field_0_value'] = date.today().strftime('%Y-%m')
         item_event_data_to_send['cancelled'] = 'Yes' if item_event_data_to_send.get('cancelled', False) else 'No'
         item_event_data_to_send['deleted'] = 'Yes' if item_event_data_to_send.get('deleted', False) else 'No'
+        i = 1
+        for k, v in event_data.get('extra_fields', {}).items():
+            item_event_data_to_send['extra_field_'+str(i)+'_name'] = k
+            item_event_data_to_send['extra_field_'+str(i)+'_value'] = v
+            i += 1
         i = 0
         for tag_id in event_data.get('add_tags', []):
             item_event_data_to_send['add_tag_'+str(i)] = tag_id

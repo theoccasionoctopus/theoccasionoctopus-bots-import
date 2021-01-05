@@ -97,7 +97,7 @@ class FOSDEM2021(BaseSpider):
                                 'cancelled': False,
                             },
                             'extra_fields': {
-                                'event-id': elementRoom.get('name'),
+                                'event-id': elementEvent.get('id'),
                                 'event-slug': slug,
                             },
                             'add_tags': [],
