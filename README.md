@@ -69,3 +69,14 @@ HTTPS is assumed.
 This fetches online events only.
 
     scrapy crawl unistandrews
+
+### W3 Social Web Incubator Community Group
+
+This does actually not import events from anywhere else.
+
+If events do not exist in the account, it creates events accoreding to a set pattern.
+
+    scrapy crawl w3socialwebincubatorcommunitygroup
+
+
+
