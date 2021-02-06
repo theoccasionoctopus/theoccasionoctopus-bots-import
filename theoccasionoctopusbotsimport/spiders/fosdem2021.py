@@ -6,7 +6,11 @@ import datetime
 
 from theoccasionoctopusbotsimport.base_spider import BaseSpider
 
-
+#
+# TODO:
+# This should not find existing events by URL but find by Event ID
+# In 2021 I saw cases where the slug & URL changed but event ID stayed the same
+#
 class FOSDEM2021(BaseSpider):
     name = 'fosdem2021'
     download_delay = 5
